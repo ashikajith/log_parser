@@ -78,5 +78,8 @@ DEPENDENCIES
   simplecov (< 0.18.0)
   web_page_log!
 
+RUBY VERSION
+   ruby 2.7.1p83
+
 BUNDLED WITH
    2.2.16

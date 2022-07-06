@@ -6,6 +6,7 @@ source "https://rubygems.org"
 gemspec
 
 gem "rake", "~> 13.0"
+ruby "2.7.1"
 
 group :development, :test do
   gem "bundler-audit"
