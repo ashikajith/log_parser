@@ -8,7 +8,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ["ashikajith"]
   spec.email         = ["ashikajith@gmail.com"]
 
+  spec.summary       = "Weblog parser to find the total visit count from each domain path."
+  spec.description   = "Simple Ruby Log Parser which shows the path visited the most - either total or unique count."
   spec.homepage      = "https://github.com/ashikajith/log_parser.git"
+  spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 
   # Specify which files should be added to the gem when it is released.
