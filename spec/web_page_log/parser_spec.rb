@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe WebPageLog::Parser do
   describe "#perform" do
     context "for a valid log file" do

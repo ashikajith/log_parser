@@ -15,5 +15,6 @@ group :development, :test do
   gem "rspec_junit_formatter"
   gem "rubocop"
   gem "rubocop-performance"
+  gem "rubocop-rspec"
   gem "simplecov", "< 0.18.0", require: false
 end

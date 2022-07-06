@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require_relative "./web_page_log"
 
-collection = WebPageLog::Parser.new('data/webserver.log').perform
+collection = WebPageLog::Parser.new("data/webserver.log").perform
 
 puts "Total visits by each domain path"
 collection.total_page_views

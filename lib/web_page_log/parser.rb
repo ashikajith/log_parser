@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 module WebPageLog
-  class ParseError < StandardError; end
+  # Class to parse the log file and extract the logs to respective objects
   class Parser
     attr_reader :document
 
@@ -14,6 +16,7 @@ module WebPageLog
       File.foreach(document) do |line|
         domain_path, ip_address = line.split((" "))
         next if [domain_path, ip_address].any? { |ele| ele.nil? || ele.empty? }
+
         collection.add_view_path(domain_path: domain_path, ip_address: ip_address)
       end
       collection

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe WebPageLog::VisitorCollection do
   let(:server_log_hash) do
     [
@@ -24,11 +26,11 @@ RSpec.describe WebPageLog::VisitorCollection do
       subject.records = visitor_collection
       expect(subject.total_page_views).to eq(
         log_formatter({
-          "/help_page/1"=>4,
-          "/contact"=>2,
-          "/about"=>2,
-          "/home"=>1
-        })
+                        "/help_page/1" => 4,
+                        "/contact" => 2,
+                        "/about" => 2,
+                        "/home" => 1
+                      })
       )
     end
 
@@ -42,11 +44,11 @@ RSpec.describe WebPageLog::VisitorCollection do
       subject.records = visitor_collection
       expect(subject.total_uniq_page_views).to eq(
         log_formatter({
-          "/help_page/1"=>3,
-          "/contact"=>2,
-          "/home"=>1,
-          "/about"=>1
-        }, uniq: true)
+                        "/help_page/1" => 3,
+                        "/contact" => 2,
+                        "/home" => 1,
+                        "/about" => 1
+                      }, uniq: true)
       )
     end
 

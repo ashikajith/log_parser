@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = "Simple Ruby Log Parser which shows the path visited the most - either total or unique count."
   spec.homepage      = "https://github.com/ashikajith/log_parser.git"
   spec.license       = "MIT"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

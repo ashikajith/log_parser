@@ -1,5 +1,6 @@
 # frozen_string_literal: true
-require 'pry'
+
+require "pry"
 require_relative "web_page_log/version"
 require_relative "web_page_log/parser"
 require_relative "web_page_log/visitor"
